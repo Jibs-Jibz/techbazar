@@ -41,7 +41,7 @@ export default function FAQ() {
   return (
     <div
       id="faq"
-      className=" w-full py-8 lg:py-20 flex flex-col text-center items-center bg-[#fff] px-6 lg:px-14 "
+      className=" w-full py-8 lg:py-20 flex flex-col text-center items-center  px-6 lg:px-14 "
     >
       <div>
         <p className="text-3xl lg:text-5xl font-bold text-[#303179] my-4">

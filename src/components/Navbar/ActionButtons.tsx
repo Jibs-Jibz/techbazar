@@ -12,6 +12,7 @@ import {
 import { AlignJustify } from "lucide-react";
 
 import Link from "next/link";
+import { ModeToggle } from "../ModeToggle";
 
 const ActionButtons = () => {
   return (
@@ -38,9 +39,10 @@ const ActionButtons = () => {
       </div>
 
       <div className="hidden md:flex md:space-x-4">
-        <Button className="text-md" variant="ghost">
+        {/* <Button className="text-md" variant="ghost">
           <a href="mailto:">Contact Me</a>
-        </Button>
+        </Button> */}
+        <ModeToggle />
       </div>
     </div>
   );
