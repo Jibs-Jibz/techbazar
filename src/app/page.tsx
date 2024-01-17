@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import FirstSection from "@/components/Sections/FirstSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
-   <main>
-    TECHBAZR
-   </main>
-  )
+    <main>
+      <FirstSection />
+    </main>
+  );
 }
