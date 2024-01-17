@@ -1,4 +1,5 @@
 import Layout from "@/layouts/Layout";
+import Image from "next/image";
 import React from "react";
 
 const FirstSection = () => {
@@ -22,9 +23,18 @@ const FirstSection = () => {
             </button>
           </div>
 
-          <div className="pt-10 mt-10 lg:mt-20 w-full h-full max-w-[500px] max-h-[500px] border flex mx-auto ">
+          <div className="pt-10 mt-10  w-full h-full max-w-[500px] max-h-[500px] flex mx-auto ">
             {/* Image Place Holder here */}
-            <div>IMAGE PLACEHOLDER HERE</div>
+            <Image
+              width={500}
+              height={500}
+              src="/assets/header-img.jpg"
+              alt="Picture of the author"
+              className="rounded-md"
+              layout="responsive"
+              objectFit="cover"
+              objectPosition="center"
+            />
           </div>
         </div>
       </section>
