@@ -44,7 +44,22 @@ export default function FAQ() {
       className=" w-full py-8 lg:py-20 flex flex-col text-center items-center  px-6 lg:px-14 "
     >
       <div>
-        <p className="text-3xl lg:text-5xl font-bold text-[#303179] my-4">
+        <p
+          className="
+         text-3xl
+         flex
+         justify-center
+         md:text-5xl
+         font-bold
+         pt-5
+         pb-10
+         bg-gradient-to-r
+         from-purple-400
+         to-blue-800
+         bg-clip-text
+         text-transparent
+        my-4"
+        >
           Frequently Asked Questions
         </p>
       </div>

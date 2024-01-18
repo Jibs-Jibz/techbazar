@@ -1,3 +1,4 @@
+import AboutUs from "@/components/About";
 import Carousel from "@/components/Carousels/Carousel";
 import FAQ from "@/components/FAQ";
 import FirstSection from "@/components/Sections/FirstSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <Carousel />
       <SecondSection />
       <FAQ />
+      <AboutUs />
     </main>
   );
 }
