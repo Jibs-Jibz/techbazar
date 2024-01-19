@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 @layer base {
   :root {
@@ -50,12 +49,11 @@
   }
 }
 
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+body {
+  scroll-padding-top: 14rem;
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-tl from-lime-500 via-orange-300 to-green-400;
 }

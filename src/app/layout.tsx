@@ -24,11 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` dark:bg-black  ${poppins.variable}  font-poppins `}>
+      <body
+        className={` dark:bg-black dark:text-gray-400 ${poppins.variable}  font-poppins `}
+      >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          // enableSystem={false}
           disableTransitionOnChange
         >
           <Navbar />

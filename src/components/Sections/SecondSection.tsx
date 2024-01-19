@@ -50,7 +50,7 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div className="text-gray-800">
+    <div id="services" className="text-gray-800">
       <div className="flex flex-col items-center justify-center">
         <div
           className="
@@ -62,15 +62,14 @@ const ServicesPage = () => {
                 pt-5
                 pb-10
                 bg-gradient-to-r
-                from-purple-400
-                to-blue-800
+                gradient-text
                 bg-clip-text
                 text-transparent
                 "
         >
           Our Services
         </div>
-        <div className=" max-w-[600px] text-sm lg:text-base text-center">
+        <div className=" max-w-[600px] dark:text-gray-400 text-sm lg:text-base text-center">
           Our team of experts is dedicated to providing top-notch IT solutions
           that propel your business forward. We combine technical proficiency
           with industry best practices to deliver tailored services.{" "}
@@ -88,10 +87,10 @@ const ServicesPage = () => {
                 height={300}
                 className="object-contain mx-auto h-20 w-20 mb-6"
               />
-              <div className=" text-lg text-center lg:text-xl font-bold pb-4 bg-gradient-to-t from-black to-gray-400 bg-clip-text text-transparent">
+              <div className=" text-lg text-center lg:text-xl font-bold pb-4 bg-gradient-to-t from-black to-gray-400 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent">
                 {service.name}
               </div>
-              <div className="text-sm lg:text-base text-center">
+              <div className="text-sm dark:text-gray-400 lg:text-base text-center">
                 {service.description}
               </div>
             </div>

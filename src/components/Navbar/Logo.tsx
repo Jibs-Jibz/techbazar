@@ -6,19 +6,22 @@ const Logo = () => {
   const { theme } = useTheme();
   console.log(theme);
 
+  console.log(theme === "system");
+
   return (
     <div>
-      {/* <Image
-        src="/assets/logo.png"
-        className=" rounded-sm "
+      <Image
+        src={`/assets/logo-black.jpg`}
+        alt="TechBazr logo"
+        className={`rounded-sm hidden dark:block object-contain
+        ${theme === "dark" ? "" : "  "} `}
         width={120}
         height={50}
-        alt="TechBazr logo"
-      /> */}
+      />
       <Image
-        src={`/assets/logo-${theme === "dark" ? "black" : "white"}.jpg`}
+        src={`/assets/logo-white.jpg`}
         alt="TechBazr logo"
-        className={`rounded-sm object-contain
+        className={`rounded-sm dark:hidden block object-contain
         ${theme === "dark" ? "" : "  "} `}
         width={120}
         height={50}

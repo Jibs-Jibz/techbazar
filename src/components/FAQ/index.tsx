@@ -54,8 +54,7 @@ export default function FAQ() {
          pt-5
          pb-10
          bg-gradient-to-r
-         from-purple-400
-         to-blue-800
+         gradient-text
          bg-clip-text
          text-transparent
         my-4"
