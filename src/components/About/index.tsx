@@ -113,9 +113,9 @@ const AboutUs = () => {
               />
               <h3 className=" font-semibold  ">Customer-Centric Approach:</h3>
               <p className=" text-sm ">
-                Prioritize our customers' needs and experiences, striving to
-                exceed expectations through personalized service, active
-                listening, and responsive solutions.
+                Prioritize our customers &apos needs and experiences, striving
+                to exceed expectations through personalized service, active
+                listening, and responsive &apos solutions.
               </p>
             </div>
           </Marquee>
@@ -127,7 +127,7 @@ const AboutUs = () => {
           <p className="text-sm text-center lg:text-base text-gray-600 dark:text-gray-300">
             Our vision is dedicated to shaping a connected world where
             possibilities are limitless, and the benefits of technology are
-            within everyone's reach.
+            within everyone &apos s reach.
           </p>
           <div className="grid grid-cols-1 gap-4 text-gray-700 dark:text-gray-300">
             <div>
