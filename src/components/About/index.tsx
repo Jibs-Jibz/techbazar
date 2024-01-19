@@ -134,8 +134,8 @@ const AboutUs = () => {
               <h3 className="font-semibold">B - Bold Innovation:</h3>
               <p>
                 In our culture, we embrace bold innovation, encouraging our team
-                to think creatively and push the boundaries of what's possible
-                in the tech world.
+                to think creatively and push the boundaries of what &apos s
+                possible in the tech world.
               </p>
             </div>
             <div>
