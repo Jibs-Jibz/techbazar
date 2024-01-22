@@ -11,21 +11,21 @@ const Logo = () => {
   return (
     <div>
       <Image
-        src={`/assets/new-logo-blueblack.png`}
+        src={`/assets/new-logo-blueblack-removebg.png`}
         alt="TechBazr logo"
-        className={`rounded-sm hidden dark:block object-contain
+        className={`rounded-sm  object-contain
         ${theme === "dark" ? "" : "  "} `}
         width={120}
         height={50}
       />
-      <Image
+      {/* <Image
         src={`/assets/new-logo-white.png`}
         alt="TechBazr logo"
         className={`rounded-sm dark:hidden block object-contain
         ${theme === "dark" ? "" : "  "} `}
         width={200}
         height={50}
-      />
+      /> */}
     </div>
   );
 };
