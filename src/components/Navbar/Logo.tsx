@@ -11,7 +11,7 @@ const Logo = () => {
   return (
     <div>
       <Image
-        src={`/assets/logo-black.jpg`}
+        src={`/assets/new-logo-blueblack.png`}
         alt="TechBazr logo"
         className={`rounded-sm hidden dark:block object-contain
         ${theme === "dark" ? "" : "  "} `}
@@ -19,11 +19,11 @@ const Logo = () => {
         height={50}
       />
       <Image
-        src={`/assets/logo-white.jpg`}
+        src={`/assets/new-logo-white.png`}
         alt="TechBazr logo"
         className={`rounded-sm dark:hidden block object-contain
         ${theme === "dark" ? "" : "  "} `}
-        width={120}
+        width={200}
         height={50}
       />
     </div>

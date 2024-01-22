@@ -7,25 +7,26 @@ const AboutUs = () => {
   return (
     <Layout>
       <h3
-        className=" text-3xl flex justify-center md:text-5xl font-bold pt-5 pb-10 bg-clip-text
+        id="about"
+        className=" scroll-mt-20 scroll-smooth header-text flex justify-center font-bold pt-5 pb-10 bg-clip-text
          gradient-text text-transparent my-4"
       >
         About Us
       </h3>
       <div className="flex flex-col gap-6">
         <div className=" flex flex-col gap-3 justify-center items-center ">
-          <h3 className=" text-lg lg:text-2xl capitalize font-semibold ">
-            our core values:
+          <h3 className=" underline underline-offset-4 sub-header-text  font-bold capitalize">
+            our core values
           </h3>
-          <p className=" text-sm lg:text-base ">
+          <p className=" text-sm capitalize lg:text-base ">
             {" "}
             Innovation, integrity and Excellence
           </p>
         </div>
 
         <div className=" flex flex-col  items-center justify-center gap-3 ">
-          <h3 className=" text-lg lg:text-2xl capitalize font-semibold ">
-            our mission:
+          <h3 className=" underline underline-offset-4  sub-header-text font-bold capitalize ">
+            our mission
           </h3>
           <p className=" text-sm text-center  lg:text-base ">
             our mission is to be the unparalleled provider of everyday tech
@@ -40,6 +41,7 @@ const AboutUs = () => {
             world of technology
           </p>
           <Marquee
+            pauseOnHover={true}
             className="  "
             //   className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 "
           >
@@ -51,7 +53,7 @@ const AboutUs = () => {
                 height={300}
                 className="object-contain mx-auto h-20 w-20 mb-6"
               />
-              <h3 className=" font-semibold  ">Integrity:</h3>
+              <h3 className=" font-semibold  ">Integrity</h3>
               <p className=" text-sm ">
                 Uphold the highest ethical standards, promoting honesty,
                 transparency, and accountability in all interactions, both
@@ -66,7 +68,7 @@ const AboutUs = () => {
                 height={300}
                 className="object-contain mx-auto h-20 w-20 mb-6"
               />
-              <h3 className=" font-semibold  ">Innovation:</h3>
+              <h3 className=" font-semibold  ">Innovation</h3>
               <p className=" text-sm ">
                 Embrace a culture of continuous improvement, fostering
                 creativity and forward-thinking to stay at the forefront of
@@ -81,7 +83,7 @@ const AboutUs = () => {
                 height={300}
                 className="object-contain mx-auto h-20 w-20 mb-6"
               />
-              <h3 className=" font-semibold  ">Quality Excellence:</h3>
+              <h3 className=" font-semibold  ">Quality Excellence</h3>
               <p className=" text-sm ">
                 Commit to delivering top-notch quality in every aspect of our
                 products and services, ensuring that TechBazr is synonymous with
@@ -96,7 +98,7 @@ const AboutUs = () => {
                 height={300}
                 className="object-contain mx-auto h-20 w-20 mb-6"
               />
-              <h3 className=" font-semibold  ">Community Engagement:</h3>
+              <h3 className=" font-semibold  ">Community Engagement</h3>
               <p className=" text-sm ">
                 Actively contribute to the community by sharing knowledge,
                 supporting educational initiatives, and participating in
@@ -121,42 +123,50 @@ const AboutUs = () => {
           </Marquee>
         </div>
         <div className="flex flex-col items-center justify-center gap-6 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-          <h3 className="text-lg lg:text-2xl capitalize font-semibold text-primary dark:text-primary-light">
+          <h3 className=" underline underline-offset-4 sub-header-text font-bold capitalize text-primary dark:text-primary-light">
             Our Vision
           </h3>
           <p className="text-sm text-center lg:text-base text-gray-600 dark:text-gray-300">
             Our vision is dedicated to shaping a connected world where
             possibilities are limitless, and the benefits of technology are
-            within everyone &apos s reach.
+            within everyone&apos;s reach.
           </p>
           <div className="grid grid-cols-1 gap-4 text-gray-700 dark:text-gray-300">
             <div>
-              <h3 className="font-semibold">B - Bold Innovation:</h3>
-              <p>
+              <h3 className=" gradient-text w-fit  font-semibold">
+                B - Bold Innovation:
+              </h3>
+              <p className="text-sm">
                 In our culture, we embrace bold innovation, encouraging our team
-                to think creatively and push the boundaries of what &apos s
+                to think creatively and push the boundaries of what&apos;s
                 possible in the tech world.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold">A - Agile Collaboration:</h3>
-              <p>
+              <h3 className=" gradient-text w-fit  font-semibold">
+                A - Agile Collaboration:
+              </h3>
+              <p className="text-sm">
                 Agility is at the core of our collaborative approach. We value
                 quick adaptation to changes and seamless collaboration, ensuring
                 our team can respond effectively to the dynamic tech landscape.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold">Z - Zealous Team Spirit:</h3>
-              <p>
+              <h3 className=" gradient-text w-fit  font-semibold">
+                Z - Zealous Team Spirit:
+              </h3>
+              <p className="text-sm">
                 Zeal runs through the veins of our team. We foster a culture of
                 enthusiasm and team spirit, where every member is motivated to
                 contribute their best to the collective success of TechBazr.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold">R - Respectful Diversity:</h3>
-              <p>
+              <h3 className=" gradient-text w-fit  font-semibold">
+                R - Respectful Diversity:
+              </h3>
+              <p className="text-sm">
                 Respect is the foundation of our diverse and inclusive culture.
                 We celebrate differences, recognizing that a variety of
                 perspectives enhances our creativity and problem-solving

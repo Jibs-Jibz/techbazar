@@ -50,14 +50,13 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div id="services" className="text-gray-800">
-      <div className="flex flex-col items-center justify-center">
+    <div id="services" className="scroll-mt-20 scroll-smooth text-gray-800">
+      <div className="flex flex-col gap-y-4 items-center justify-center">
         <div
           className="
-                text-3xl
+          header-text
                 flex
                 justify-center
-                md:text-5xl
                 font-bold
                 pt-5
                 pb-10

@@ -17,42 +17,28 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Logo from "./Logo";
+import { ComputerTower, DeviceTabletSpeaker } from "@phosphor-icons/react";
 
 const components: { title: string; description: string }[] = [
   {
-    title: "Finance and Banking",
+    title: "HR Consulting",
 
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    description: "Elevate your HR processes with strategic IT solutions.",
   },
   {
-    title: "Healthcare and Life Sciences",
+    title: "Tech",
 
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    description: "Your go-to partner for tech solutions.",
   },
   {
-    title: "Retail and E-commerce",
+    title: "FMCG",
 
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    description: "Stay competitive in the fast-paced FMCG sector.",
   },
   {
-    title: "Manufacturing and Logistics",
+    title: "Finance",
 
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Education and E-learning",
-
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Government and Public Sector",
-
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Energy and Utilities",
-
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    description: "Ensure secure and reliable financial operations.",
   },
 ];
 
@@ -65,60 +51,76 @@ export function NavigationMenuBar() {
             Services
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Logo />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Information Technology Consulting
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      IT solutions across various industries.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem title="Managed Data Connectivity">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-              <ListItem title="Virus & Spam Protection">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-              <ListItem title="Cloud Backup">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-            </ul>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Logo />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Cyber Security
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem title="Office 365 for Business">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-              <ListItem title="Data Cabling">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-              <ListItem title="Hosted Telephony">
-                Lorem ipsum dolor sit amet consectetur.
-              </ListItem>
-            </ul>
+            <Link href="#services">
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="#services"
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    >
+                      {/* <IconITConsulting /> */}
+                      <DeviceTabletSpeaker size={70} />
+                      {/* <ComputerTower size={70} /> */}
+                      <Link
+                        href="#services"
+                        className="mb-2 mt-4 text-lg font-medium"
+                      >
+                        IT Consulting
+                      </Link>
+                      <Link
+                        href="#services"
+                        className="text-sm leading-tight text-muted-foreground"
+                      >
+                        Strategic guidance for leveraging IT to achieve business
+                        goals.
+                      </Link>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <ListItem title="Managed Services">
+                  Outsourced management of your IT infrastructure for
+                  efficiency.
+                </ListItem>
+                <ListItem title="Infrastructure Support & Maintenance">
+                  Ongoing support and maintenance to keep your systems running
+                  smoothly.
+                </ListItem>
+                <ListItem title="Web Design & Development">
+                  Creative and effective web solutions tailored to your business
+                  needs.
+                </ListItem>
+              </ul>
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      href="/"
+                    >
+                      {/* <IconVirtualizedInfrastructure /> */}
+                      <ComputerTower size={70} />
+
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        Virtualized Infrastructure
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        Efficient utilization of virtualization technologies for
+                        optimal resource allocation.
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+                <ListItem title="Surveillance Security System">
+                  Robust security solutions to safeguard your premises and
+                  assets.
+                </ListItem>
+                <ListItem title="Sales and Delivery of IT Equipment">
+                  Procurement and delivery of high-quality IT equipment for your
+                  business.
+                </ListItem>
+              </ul>
+            </Link>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -127,23 +129,25 @@ export function NavigationMenuBar() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
-                  {component.description}
-                </ListItem>
+              {components.map((component, index) => (
+                <Link key={index} href="#industries">
+                  <ListItem title={component.title}>
+                    {component.description}
+                  </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="#about" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium">
               About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="#contact" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium">
               Contact
             </NavigationMenuLink>

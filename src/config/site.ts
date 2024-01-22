@@ -32,5 +32,5 @@ export const siteConfig: SiteConfig = {
 };
 
 export const contactConfig: ContactConfig = {
-  email: "",
+  email: "osunkoyajibola@hotmail.com",
 };

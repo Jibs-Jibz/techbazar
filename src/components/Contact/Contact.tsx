@@ -17,6 +17,7 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { contactConfig } from "@/config/site";
 import Layout from "@/layouts/Layout";
+import { MailIcon, Phone } from "lucide-react";
 
 const formSchema = z.object({
   subject: z.string().min(1, {
@@ -43,15 +44,35 @@ const Contact = () => {
   return (
     <Layout>
       <h3
-        className=" text-3xl flex justify-center md:text-5xl font-bold pt-5 pb-10 bg-clip-text
+        className=" scroll-mt-20 scroll-smooth text-3xl flex justify-center md:text-5xl font-bold pt-5 pb-10 bg-clip-text
          gradient-text text-transparent my-4"
+        id="contact"
       >
         Contact Us
       </h3>
+      <div className="flex flex-col gap-6 items-center justify-center px-4 md:px-20"      >
+        <p className="text-center text-sm md:text-base">
+          We are always happy to hear from you. Contact us today to discuss your
+          requirements and find out how we can help you achieve your business
+          goals.
+        </p>
+        <div className=" flex justify-center items-center gap-6 flex-wrap ">
+          <a
+            className=" flex items-center gap-2 "
+            href="mailto:admin@techbazr.com"
+          >
+            <MailIcon /> admin@techbazr.com
+          </a>
+          <a className=" flex items-center gap-2 " href="tel:+234 708 603 5929">
+            <Phone />
+            +234 708 603 5929
+          </a>
+        </div>
+      </div>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-full space-y-4 py-8 max-w-[650px] mx-auto"
+          className="w-full space-y-4 py-8 max-w-[650px] mt-10 mx-auto"
         >
           <FormField
             control={form.control}

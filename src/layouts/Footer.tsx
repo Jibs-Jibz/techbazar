@@ -12,26 +12,26 @@ import Link from "next/link";
 // import { navLinks } from "@/lib/links"
 
 const socialLinks = [
-  {
-    route: "Facebook",
-    path: "https://www.facebook.com/",
-    icon: <FacebookLogo />,
-  },
+  // {
+  //   route: "Facebook",
+  //   path: "https://www.facebook.com/",
+  //   icon: <FacebookLogo />,
+  // },
   {
     route: "Twitter",
-    path: "https://twitter.com/",
+    path: "https://twitter.com/techbazr",
     icon: <TwitterLogo />,
   },
   {
     route: "Instagram",
-    path: "https://www.instagram.com/",
+    path: "https://www.instagram.com/techbazr?igsh=MzRlODBiNWFlZA==/",
     icon: <InstagramLogo />,
   },
-  {
-    route: "LinkedIn",
-    path: "https://www.linkedin.com/in//",
-    icon: <LinkedinLogo />,
-  },
+  // {
+  //   route: "LinkedIn",
+  //   path: "https://www.linkedin.com/in//",
+  //   icon: <LinkedinLogo />,
+  // },
 ];
 
 export default function Footer() {
@@ -43,11 +43,14 @@ export default function Footer() {
             <Logo />
           </Link>
           <div className=" flex justify-center items-center ">
-            <Link href="/" className="text-base px-6 text-muted-foreground  ">
+            <Link
+              href="#about"
+              className="text-base px-6 text-muted-foreground  "
+            >
               About Us
             </Link>
             <Link
-              href="/"
+              href="#contact"
               className="text-base px-6 text-muted-foreground border-x border-x-green-400 "
             >
               Link Us
@@ -81,7 +84,7 @@ export default function Footer() {
           © {new Date().getFullYear()}{" "}
           <a
             target="_blank"
-            href="https://redpangilinan.live/"
+            href="https://techbazr.com/"
             className="hover:underline"
           >
             TechBazr

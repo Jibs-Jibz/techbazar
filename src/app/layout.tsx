@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` dark:bg-black dark:text-gray-400 ${poppins.variable}  font-poppins `}
+        className={` scroll-mt-28 scroll-smooth dark:bg-black dark:text-gray-400 ${poppins.variable}  font-poppins `}
       >
         <ThemeProvider
           attribute="class"

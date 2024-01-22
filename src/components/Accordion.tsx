@@ -25,7 +25,7 @@ const Accordion: React.FC<AccordionType> = ({
         onClick={() => setExpanded(isOpen ? false : i)}
         className="flex justify-between items-center cursor-pointer"
       >
-        <h1 className="font-medium text-xs lg:text-xl text-left">{title}</h1>
+        <h1 className="font-medium sub-header-text text-left">{title}</h1>
         <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
           <svg
             role="button"
@@ -58,7 +58,7 @@ const Accordion: React.FC<AccordionType> = ({
               transition={{ duration: 0.8, linear: [0.04, 0.62, 0.23, 0.98] }}
             >
               <hr className=" dark:bg-gray-400/20 bg-[#65656733]/20 w-full my-4" />
-              <div className="lg:text-base text-sm text-left">{content}</div>
+              <div className="paragraph-text text-left">{content}</div>
             </motion.section>
           </>
         )}

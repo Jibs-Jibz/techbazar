@@ -50,10 +50,27 @@
 }
 
 body {
-  scroll-padding-top: 14rem;
   scroll-behavior: smooth;
+  scroll-margin-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
 }
 
 .gradient-text {
-  @apply bg-gradient-to-tl from-lime-500 via-orange-300 to-green-400;
+  @apply bg-gradient-to-tl from-lime-500 via-orange-300 to-green-400 bg-clip-text text-transparent;
+}
+
+.header-text {
+  @apply text-xl lg:text-3xl font-bold text-center;
+}
+
+.sub-header-text {
+  @apply text-lg lg:text-xl font-semibold text-center;
+}
+
+.paragraph-text {
+  @apply text-sm lg:text-base;
 }
