@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main>
       <FirstSection />
-      <Carousel />
       <SecondSection />
+      <Carousel />
       <FAQ />
       <IndustriesSection />
       <AboutUs />

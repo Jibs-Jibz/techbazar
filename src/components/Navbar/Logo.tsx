@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Logo = () => {
   const { theme } = useTheme();
-  console.log(theme);
+  // console.log(theme);
 
-  console.log(theme === "system");
+  // console.log(theme === "system");
 
   return (
     <div>

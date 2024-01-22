@@ -15,9 +15,12 @@ const images = [
     url: "/assets/logos/yimika.jpg",
     alt: "Logo2",
   },
-
   {
     url: "/assets/logos/yomi-visuals.jpg",
+    alt: "Logo3",
+  },
+  {
+    url: "/assets/logos/publicity-house.png",
     alt: "Logo3",
   },
 ];
@@ -38,7 +41,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout className="mt-12">
       <div
         className="items-center justify-center flex header-text font-bold md:pb-10 px-10
         bg-gradient-to-r

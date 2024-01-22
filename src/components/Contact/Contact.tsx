@@ -17,7 +17,8 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { contactConfig } from "@/config/site";
 import Layout from "@/layouts/Layout";
-import { MailIcon, Phone } from "lucide-react";
+import { LocateIcon, MailIcon, MapPinIcon, Phone } from "lucide-react";
+import { MapPin } from "@phosphor-icons/react";
 
 const formSchema = z.object({
   subject: z.string().min(1, {
@@ -50,7 +51,7 @@ const Contact = () => {
       >
         Contact Us
       </h3>
-      <div className="flex flex-col gap-6 items-center justify-center px-4 md:px-20"      >
+      <div className="flex flex-col gap-6 items-center justify-center px-4 md:px-20">
         <p className="text-center text-sm md:text-base">
           We are always happy to hear from you. Contact us today to discuss your
           requirements and find out how we can help you achieve your business
@@ -58,14 +59,28 @@ const Contact = () => {
         </p>
         <div className=" flex justify-center items-center gap-6 flex-wrap ">
           <a
-            className=" flex items-center gap-2 "
+            className=" paragraph-text flex items-center gap-2 "
             href="mailto:admin@techbazr.com"
           >
             <MailIcon /> admin@techbazr.com
           </a>
-          <a className=" flex items-center gap-2 " href="tel:+234 708 603 5929">
+          <a
+            className=" paragraph-text flex items-center gap-2 "
+            href="tel:+234 708 603 5929"
+          >
             <Phone />
             +234 708 603 5929
+          </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <a
+            className=" flex items-center gap-2 paragraph-text"
+            href="http://31, Adedoyin Road Surulere Lagos, Nigeria."
+          >
+            {/* <MapPin /> */}
+            <MapPinIcon />
+            {/* <LocateIcon /> */}
+            31, Adedoyin Road Surulere Lagos, Nigeria.
           </a>
         </div>
       </div>
