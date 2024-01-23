@@ -29,7 +29,7 @@ const services = [
       "Creative and effective web solutions tailored to your business needs.",
   },
   {
-    name: "Virtualized Infrastructure",
+    name: "Cloud Computing",
     img: "/assets/infrastructure.png",
     description:
       "Efficient utilization of virtualization technologies for optimal resource allocation.",
@@ -46,11 +46,17 @@ const services = [
     description:
       "Procurement and delivery of high-quality IT equipment for your business.",
   },
+  {
+    name: "Cybersecurity",
+    img: "/assets/cyber-security.png",
+    description:
+      "Comprehensive cybersecurity measures to protect your digital assets and data.",
+  },
 ];
 
 const ServicesPage = () => {
   return (
-    <div id="services" className="scroll-mt-20 scroll-smooth text-gray-800">
+    <div id="services" className="scroll-mt-20 max-w-[1440px] mx-auto scroll-smooth text-gray-800">
       <div className="flex flex-col gap-y-4 items-center justify-center">
         <div
           className="

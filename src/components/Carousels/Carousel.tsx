@@ -52,7 +52,7 @@ const Carousel = () => {
         Brands who trust us
       </div>
 
-      <div className="grid grid-cols-3 p-4 md:flex gap-x-8 md:justify-center ">
+      <div className="grid grid-cols-3 p-4 md:flex gap-8 md:justify-center ">
         <AnimatePresence custom={currentImageIndex}>
           {images.map((image, index) => (
             <motion.div

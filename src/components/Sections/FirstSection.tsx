@@ -37,10 +37,8 @@ relative
               height={500}
               src="/assets/header-img.jpg"
               alt="Picture of the author"
-              className="rounded-md"
+              className=" object-cover object-center rounded-md"
               layout="responsive"
-              objectFit="cover"
-              objectPosition="center"
             />
           </div>
         </div>

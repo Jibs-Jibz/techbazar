@@ -33,7 +33,7 @@ const industriesData = [
 
 const IndustriesSection = () => {
   return (
-    <div className="scroll-mt-20 scroll-smooth " id="industries">
+    <div className="scroll-mt-20 max-w-[1440px] mx-auto scroll-smooth " id="industries">
       <h3
         className=" header-text flex justify-center font-bold pt-5 pb-10 bg-clip-text
          gradient-text text-transparent my-4"

@@ -8,6 +8,7 @@ export const siteConfig: SiteConfig = {
   description:
     "Empowering businesses with specialized IT services for growth and productivity.",
   keywords: [
+    "techbazar",
     "techbazr",
     "techbazr.com",
     "techbazr nigeria",
@@ -32,5 +33,5 @@ export const siteConfig: SiteConfig = {
 };
 
 export const contactConfig: ContactConfig = {
-  email: "osunkoyajibola@hotmail.com",
+  email: "admin@techbazr.com",
 };

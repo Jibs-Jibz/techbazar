@@ -102,7 +102,7 @@ export function NavigationMenuBar() {
                       <ComputerTower size={70} />
 
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        Virtualized Infrastructure
+                        Cloud Computing
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
                         Efficient utilization of virtualization technologies for
@@ -118,6 +118,10 @@ export function NavigationMenuBar() {
                 <ListItem title="Sales and Delivery of IT Equipment">
                   Procurement and delivery of high-quality IT equipment for your
                   business.
+                </ListItem>
+                <ListItem title="Cybersecurity">
+                  Comprehensive cybersecurity measures to protect your digital
+                  assets and data.
                 </ListItem>
               </ul>
             </Link>
