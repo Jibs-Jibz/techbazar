@@ -60,9 +60,9 @@ const Contact = () => {
         <div className=" flex justify-center items-center gap-6 flex-wrap ">
           <a
             className=" paragraph-text flex items-center gap-2 "
-            href="mailto:admin@techbazr.com"
+            href="mailto:hello@techbazr.com"
           >
-            <MailIcon /> admin@techbazr.com
+            <MailIcon /> hello@techbazr.com
           </a>
           <a
             className=" paragraph-text flex items-center gap-2 "

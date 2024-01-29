@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 export const metadata: Metadata = {
   title: "TechBazr",
-  description: "Your Everyday Tech Solutions Provider",
+  description: "We are your everyday tech solutions provider ",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
