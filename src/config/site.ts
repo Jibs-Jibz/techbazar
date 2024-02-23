@@ -33,5 +33,5 @@ export const siteConfig: SiteConfig = {
 };
 
 export const contactConfig: ContactConfig = {
-  email: "hello@techbazr.com",
+  email: "info@techbazr.com",
 };
