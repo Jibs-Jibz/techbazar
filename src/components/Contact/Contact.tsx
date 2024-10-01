@@ -72,7 +72,7 @@ const Contact = () => {
             +234 708 603 5929
           </a>
         </div>
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <a
             className=" flex items-center gap-2 paragraph-text"
             href="http://31, Adedoyin Road Surulere Lagos, Nigeria."
@@ -82,7 +82,7 @@ const Contact = () => {
             {/* <LocateIcon /> */}
             31, Adedoyin Road Surulere Lagos, Nigeria.
           </a>
-        </div>
+        </div> */}
       </div>
       <Form {...form}>
         <form
