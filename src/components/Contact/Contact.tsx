@@ -77,9 +77,7 @@ const Contact = () => {
             className=" flex items-center gap-2 paragraph-text"
             href="http://31, Adedoyin Road Surulere Lagos, Nigeria."
           >
-            {/* <MapPin /> */}
             <MapPinIcon />
-            {/* <LocateIcon /> */}
             31, Adedoyin Road Surulere Lagos, Nigeria.
           </a>
         </div> */}
